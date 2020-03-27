@@ -1,14 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.45em;
+  font-size: 1.2em;
   line-height: 1;
-  color: white;
+  color: #f2f5f7;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
   background: #141e30; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -20,77 +31,370 @@ header {
     #243b55,
     #141e30
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  min-height: 50vh;
+  /* min-height: 80vh; */
 }
 
+footer {
+  color: black;
+}
 nav {
   display: flex;
   align-items: center;
-  padding: 0 1em;
+  justify-content: space-between;
+  padding: 1em 3em;
+}
+
+.logo {
+  text-decoration: none;
+  color: #94ff9d;
+  font-size: xx-large;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: red;
 }
 
 ul {
-  margin-left: auto;
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
+  width: 37%;
 }
 
 li {
-  padding: 0 0.5em;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #7ec2ff;
+}
+
+.nav-icon {
+  display: none;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.nav-icon div {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 5px;
 }
 
 .header-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 15%;
+  margin: 0 10%;
   flex: 1 1 100%;
   align-items: center;
 }
 
 .header-column {
-  flex: 1 1 50%;
+  flex: 1 1 60%;
+  margin: 20px 0;
+}
+
+.header-column h2 {
+  font-size: 2em;
 }
 
 .header-column1 {
-  flex: 1 1 50%;
+  flex: 1 1 40%;
   text-align: center;
+  margin: 20px 0;
 }
 
 .header-column2 {
+  display: flex;
+  flex-wrap: wrap;
   flex: 1 1 100%;
-  background: rgb(36, 59, 85);
-  min-height: 100px;
   border-radius: 15px;
 }
 
 .img-money {
-  width: 60%;
+  width: 70%;
 }
 
 .button-header {
   background: rgb(108, 99, 255);
   color: white;
   padding: 8px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 10px;
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 1em;
 }
 
+..button-header:hover {
+}
 .exchange-table {
   display: flex;
   justify-content: space-evenly;
 }
 
+.currency-col {
+  flex: 1 1 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .currency-img {
-  width: 70px;
+  width: 80%;
   border-radius: 50%;
 }
 
 .currency-name {
-  text-align: center;
+  color: #a8c7ff;
 }
 
 .currency-value {
   font-size: 0.8em;
+}
+
+.main-container {
+  color: black;
+}
+
+.input-send {
+  display: flex;
+}
+
+.input-amount {
+  flex: 1 1 70%;
+  border-radius: 5px;
+  color: #0069c7;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+.currency-opt {
+  flex: 1 1 30%;
+  font-size: 14px;
+  line-height: 2em;
+  margin: 0 3px;
+}
+
+.live-rate-col {
+  flex: 1 1 60%;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: #172c4c;
+  padding: 16px 10px;
+}
+
+.live-rate-col span {
+  font-weight: 400;
+  font-size: small;
+  font-style: italic;
+}
+
+.mon-trans-col {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 16px 10px;
+}
+
+.transfer-title {
+  color: cadetblue;
+  justify-self: flex-start;
+}
+
+.transfer-col p {
+  margin: 5px auto;
+}
+
+.how-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 232px);
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.how-col {
+  /* flex: 1 1 30%; */
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  background-color: #84bdfe;
+  padding: 5px;
+  margin: 5px 6px;
+  border-radius: 5px;
+}
+
+.how-col p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.how-col img {
+  width: 100%;
+  border-radius: 10px;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.container {
+  margin: 0px 10%;
+  padding: 10px 0px;
+}
+
+.whyus-section {
+  background: #f5f5ff;
+}
+
+.whyus-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.whyus-col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whyus-col img {
+  width: 50%;
+  max-width: 150px;
+}
+.whyus-col h3 {
+  color: #263858;
+}
+
+.app-section {
+  background-color: #0a2d54;
+  color: white;
+}
+
+.live-chart {
   text-align: center;
+}
+.live-chart iframe {
+  border-radius: 10px;
+}
+@media screen and (max-width: 1199px) {
+  ul {
+    width: 50%;
+  }
+  .header-column h2 {
+    font-size: 1.5em;
+  }
+  .header-column p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  ul {
+    width: 60%;
+  }
+  .header-container {
+    /* margin: 0 10%; */
+  }
+  .how-col h3 {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  ul {
+    display: none;
+  }
+  ul.show {
+    position: absolute;
+    right: 3px;
+    top: 27px;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 30%;
+    background-color: #152033;
+    border-radius: 25px;
+    border: 1px solid white;
+  }
+  li {
+    margin: 5px;
+  }
+  .nav-icon {
+    display: block;
+    z-index: 1;
+    background-color: #152033;
+  }
+  .header-container {
+    margin: 0 5%;
+  }
+  .header-column h2 {
+    font-size: 1.3em;
+  }
+  .header-column p {
+    font-size: 1em;
+  }
+  nav {
+    padding: 1em 2em;
+  }
+  .container {
+    margin: 0px 5%;
+  }
+  .whyus-col h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button-header {
+    font-size: 0.8em;
+  }
+  .header-column {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+  .header-column1 {
+    flex: 1 1 100%;
+    order: -1;
+  }
+  .currency-name {
+    font-size: 0.7em;
+  }
+  .currency-value {
+    font-size: 0.5em;
+  }
+  .live-rate-col h3 {
+    font-size: 1em;
+  }
+  .img-money {
+    width: 50%;
+  }
+  nav {
+    padding: 1em;
+  }
+  ul.show {
+    width: 40%;
+  }
+  .how-col {
+    /* flex: 1 1 100%; */
+    /* padding: 5%; */
+  }
+  .how-col h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .whyus-col h3 {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .whyus-col h3 {
+    font-size: 0.5em;
+  }
 }
