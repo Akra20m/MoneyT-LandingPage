@@ -27,9 +27,9 @@ class Header extends React.Component {
         <NavBar />
         <div className="header-container">
           <div className="header-column">
-            <h2>Cheaper way to send money</h2>
-            <p>
-              Over million people uses our service and get competitive exhange
+            <h2 className="section-header">A Cheaper way to send money</h2>
+            <p className="section-p">
+              Over 2 million people uses our service and get competitive exhange
               rate
             </p>
             <div>
@@ -41,7 +41,7 @@ class Header extends React.Component {
             <img
               className="img-money"
               src={transfer}
-              alt="triangle with all three sides equal"
+              alt="It shows people transferring money"
             />
           </div>
           <div className="header-column2">

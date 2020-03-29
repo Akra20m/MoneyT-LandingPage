@@ -6,11 +6,7 @@ class LiveChat extends React.Component {
     return (
       <div className="live-chart">
         <div>
-          <iframe
-            height={355}
-            width={430}
-            src="https://sslcharts.forexprostools.com/index.php?force_lang=1&pair_ID=1&timescale=300&candles=50&style=candles"
-          />
+          <iframe src="https://sslcharts.forexprostools.com/index.php?force_lang=1&pair_ID=1&timescale=900&candles=25&style=line" />
           <div>
             <a target="_blank" href="https://www.investing.com">
               <img

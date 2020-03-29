@@ -9,9 +9,9 @@ import MobileApp from "./MobileApp";
 const Main = () => {
   return (
     <main className="main-container">
-      <LiveChart />
-      <WhyUs />
       <HowSend />
+      <WhyUs />
+      <LiveChart />
       <MobileApp />
     </main>
   );

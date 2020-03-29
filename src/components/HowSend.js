@@ -14,7 +14,7 @@ const HowSend = () => {
           <div className="how-col">
             <h3>Register for free</h3>
             <p>
-              All you need is you email address. Sign up online or use the app
+              All you need is your email address. Sign up online or use the app
             </p>
             <img src={img1} alt="register for free" />
           </div>
@@ -22,15 +22,15 @@ const HowSend = () => {
             <h3>Fill transfer request</h3>
             <p>
               Add how much you want to send and the details of recipient bank
-              account.
+              account
             </p>
             <img src={img2} alt="fill transfer request" />
           </div>
           <div className="how-col">
             <h3>Pay for transfer</h3>
             <p>
-              Add how much you want to send and the details of recipient bank
-              account.
+              Use Direct debit, wire transfer, or debit/credit card to pay for
+              the transaction.
             </p>
             <img src={img3} alt="pay for transfer" />
           </div>

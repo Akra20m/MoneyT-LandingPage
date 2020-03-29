@@ -84,7 +84,8 @@ class TransferCalc extends React.Component {
         </div>
         <div className="transfer-col">
           <p>
-            <small>Total fees</small> {this.state.fee}
+            <small>Total fees </small>
+            <span className="fee">{this.state.fee}</span>
           </p>
         </div>
         <div className="transfer-col">

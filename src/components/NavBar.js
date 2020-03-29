@@ -8,6 +8,8 @@ class NavBar extends React.Component {
     this.setState({ show: this.state.show === "show" ? "" : "show" });
   };
   render() {
+    let list = `nav-list ${this.state.show}`;
+
     return (
       <nav>
         <div>
@@ -15,21 +17,21 @@ class NavBar extends React.Component {
             MONEY<span>T</span>
           </a>
         </div>
-        <ul className={this.state.show}>
-          <li>
-            <a>ONE</a>
+        <ul className={list}>
+          <li className="nav-item">
+            <a href="#">Money transfer</a>
           </li>
-          <li>
-            <a>TWO</a>
+          <li className="nav-item">
+            <a>Track transfer</a>
           </li>
-          <li>
-            <a>THREE</a>
+          <li className="nav-item">
+            <a>Help</a>
           </li>
-          <li>
+          <li className="nav-item">
             <a>Get the app</a>
           </li>
-          <li>
-            <a>register</a>
+          <li className="nav-item">
+            <a>Register</a>
           </li>
         </ul>
         <div className="nav-icon" onClick={this.onClick}>
