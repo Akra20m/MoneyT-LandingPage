@@ -246,7 +246,7 @@ a {
   flex-direction: column;
   background-color: #84bdfe;
   padding: 10px 15px;
-  margin: 5px 6px;
+  margin: 5px 3%;
   border-radius: 5px;
 }
 
@@ -264,7 +264,7 @@ a {
   width: 100%;
   border-radius: 10px;
   align-self: flex-end;
-  margin-top: auto;
+  margin: auto;
 }
 
 .container {
@@ -357,7 +357,7 @@ footer {
 }
 
 .footer-item {
-  flex: 1 1 33%;
+  flex: 1 1 30%;
   display: block;
   margin: 5px;
 }
