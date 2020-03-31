@@ -29,7 +29,7 @@ class Header extends React.Component {
           <div className="header-column">
             <h2 className="section-header">A Cheaper way to send money</h2>
             <p className="section-p">
-              Over 2 million people uses our service and get competitive exhange
+              Over 2 million people use our service and get competitive exhange
               rate
             </p>
             <div>

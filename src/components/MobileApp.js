@@ -13,7 +13,7 @@ const MobileApp = () => {
           <div className="mobile-col1">
             <p className="section-p">
               With our app, you can send money domestically and internationally
-              right from your smart phone. Download the app and get started.
+              right from your smart phone. Download the app and get started
             </p>
             <button className="button-header">Learn More</button>
             <div>

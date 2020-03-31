@@ -30,7 +30,7 @@ const HowSend = () => {
             <h3>Pay for transfer</h3>
             <p>
               Use Direct debit, wire transfer, or debit/credit card to pay for
-              the transaction.
+              the transaction
             </p>
             <img src={img3} alt="pay for transfer" />
           </div>

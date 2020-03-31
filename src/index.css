@@ -226,6 +226,7 @@ a {
   color: #0069c7;
   background-color: white;
   border-radius: 5px;
+  margin-left: 10px;
   padding: 4px 0px;
   font-weight: 700;
 }
@@ -251,12 +252,12 @@ a {
 }
 
 .how-col p {
-  font-size: 14px;
+  font-size: 0.9em;
   margin: 5px auto;
 }
 
 .how-col h3 {
-  font-size: 14px;
+  font-size: 1.1em;
   margin: 5px auto;
 }
 
@@ -385,7 +386,7 @@ footer {
     /* margin: 0 10%; */
   }
   .how-col h3 {
-    font-size: 17px;
+    font-size: 0.9em;
   }
 }
 
@@ -434,7 +435,9 @@ footer {
   .transfer-col p {
     font-size: 0.8em;
   }
-
+  .how-col p {
+    font-size: 0.8em;
+  }
   nav {
     padding: 1em 2em;
   }
@@ -498,10 +501,6 @@ footer {
   }
   .how-col {
     max-width: 50%;
-  }
-  .how-col h3 {
-    font-size: 20px;
-    /* margin-top: 10px; */
   }
   .whyus-col h3 {
     font-size: 0.6em;
